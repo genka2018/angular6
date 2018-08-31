@@ -1,0 +1,53 @@
+header {
+  position: fixed!important;
+  width: 100%;
+  background: transparentize(#fff, 0.1)!important;
+  .logo {
+    float: left;
+    width: 100px;
+    margin: 20px 0 0 30px;
+    img {
+      width: 100%;
+    }
+    @media (max-width: 1170px){
+      margin-top: 8px;
+    }
+  }
+  .menuP {
+    ul {
+      li {
+        a {
+          font-family: 'Lato', sans-serif;
+          text-transform: uppercase;
+          font-size: 12px;
+          text-decoration: none;
+          .fa-shopping-cart {
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+    .cd-secondary-nav {
+      background: transparentize(#fff, 0.048);
+    }
+  }
+}
+.menuP {
+  .cd-primary-nav {
+    right: -260px;
+    @include trans;
+    visibility: inherit;
+    li {
+      a {
+        text-decoration: none;
+        text-transform: uppercase;
+        .fas {
+          margin-right: 12px;
+        }
+      }
+    }
+  }
+  .cd-primary-nav.nav-is-visible {
+    right: 0;
+  }
+}

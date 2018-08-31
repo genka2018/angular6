@@ -1,0 +1,62 @@
+.interes {
+  margin: 65px 0;
+  .cont {
+    width: 75%;
+    @media (max-width:400px) {
+      width: 85%;
+    }
+  }
+  .img {
+    float: left;
+    width: 30%;
+    img {
+      width: 100%;
+    }
+    @media (max-width:700px ){
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+  }
+  .info {
+    float: right;
+    width: 66%;
+    h2 {
+      font-size: 25px;
+      font-family: 'Montserrat', sans-serif;
+      margin-bottom: 20px;
+      @media (max-width:400px) {
+        font-size: 18px;
+      }
+    }
+    label {
+      font-family: 'Lato', sans-serif;
+      letter-spacing: 2px;
+      color: lighten($text, 22);
+      line-height: 19px;
+    }
+    .itemsOp {
+      @include itemsOp;
+      margin-top: 40px;
+      .item {
+        margin: 0 0 40px 0;
+      }
+      ul {
+        li {
+          .info {
+            width: 100%;
+          }
+        }
+        .right {
+          @media (max-width:360px) {
+            width: 76%!important;
+          }
+        }
+      }
+    }
+    @media (max-width:700px ){
+        width: 100%;
+        float: none;
+    }
+  }
+}

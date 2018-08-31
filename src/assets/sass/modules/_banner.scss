@@ -1,0 +1,102 @@
+.banner {
+  .item {
+    height: 590px;
+    position: relative;
+    .caption {
+      position: absolute;
+      z-index: 10;
+      text-align: center;
+      width: 100%;
+      top: 30%;
+      h2 {
+        text-transform: uppercase;
+        font-size: 50px;
+        border: 3px solid $text;
+        font-family: 'Montserrat', sans-serif;
+        display: inline-block;
+        padding: 10px 20px;
+        color: $text;
+        font-weight: 600;
+        @media (max-width:860px) {
+          font-size: 30px;
+        }
+        @media (max-width:560px) {
+          font-size: 20px;
+        }
+      }
+      label {
+        display: block;
+        font-family: 'Playball', cursive;
+        color: $gold;
+        font-size: 40px;
+        margin-top: 30px;
+        @media (max-width:660px) {
+          font-size: 30px;
+        }
+        @media (max-width:560px) {
+          margin-top: 10px;
+        }
+      }
+      @media (max-width:660px) {
+        top: 15%;
+      }
+      @media (max-width:400px) {
+        top: 10%;
+      }
+    }
+    .slide {
+      &:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        //background: transparentize(#fff, 0.6);
+      }
+    }
+  }
+  .owl-height {
+    @media (max-width:900px) {
+      height: 550px!important;
+    }
+    @media (max-width:860px) {
+      height: 470px!important;
+    }
+    @media (max-width:760px) {
+      height: 430px!important;
+    }
+    @media (max-width:660px) {
+      height: 380px!important;
+    }
+    @media (max-width:560px) {
+      height: 260px!important;
+    }
+    @media (max-width:400px) {
+      height: 230px!important;
+    }
+    @media (max-width:360px) {
+      height: 220px!important;
+    }
+  }
+  .owl-stage-outer {
+    width: 100%;
+  }
+  .owl-dots {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 30px;
+    .owl-dot {
+      width: 12px;
+      height: 12px;
+      background: #fff;
+      border: 2px solid $text;
+      border-radius: 50px;
+      display: inline-block;
+      margin: 0 5px;
+      outline: none;
+    }
+    .active {
+      background: $text;
+    }
+  }
+}

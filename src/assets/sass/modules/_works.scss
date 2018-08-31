@@ -1,0 +1,33 @@
+.works {
+  text-align: center;
+  height: 224px;
+  background: #212121;
+  padding-top: 50px;
+  label {
+    color: $gold;
+    font-family: 'Playball', cursive;
+    font-size: 25px;
+    margin-bottom: 16px;
+    letter-spacing: 2px;
+    display: block;
+  }
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+  }
+  button {
+    @include buttons;
+    @include trans;
+    margin-top: 25px;
+    border: 2px solid $gold;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 11px;
+    &:hover {
+      background: $gold;
+    }
+  }
+}

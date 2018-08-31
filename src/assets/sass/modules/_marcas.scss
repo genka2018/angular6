@@ -1,0 +1,26 @@
+.marcas {
+  background: #f3f3f3;
+  padding: 70px 0;
+  position: relative;
+  .cont {
+    width: 70%;
+  }
+  .owl-nav {
+    display: block!important;
+    position: absolute;
+    width: 100%;
+    top: 10%;
+    button {
+      font-size: 70px!important;
+      outline: none;
+    }
+    .owl-prev {
+      float: left;
+      margin-left: -40px;
+    }
+    .owl-next {
+      float: right;
+      margin-right: -40px;
+    }
+  }
+}
